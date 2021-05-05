@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Demo</title>
+
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="html2canvas.js"></script>
+    <script src="feedback.js"></script>
+    <link href="feedback.rtl.css" rel="stylesheet" />
+
+
+</head>
+
+<body>
+    <button id="content">feedback</button>
+    <script>
+        function onStart() {
+            console.log('onStart');
+        }
+        function onClose() {
+            console.log('onClose');
+        }
+
+        var options = new phoenix.feedbackOptions(onStart, onClose, "home/feedback");
+        new phoenix.feedback("content", options);
+    </script>
+
+</body>
+
+</html>
