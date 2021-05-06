@@ -4,7 +4,7 @@
     __.prototype = b.prototype;
     d.prototype = new __();
 };
-/// <reference path="../jquery.d.ts" />
+/// <reference path="jquery.d.ts" />
 var phoenix;
 (function (phoenix) {
     (function (fbInitializer) {
