@@ -1,4 +1,5 @@
 ﻿/// <reference path="jquery.d.ts" />
+
 module phoenix {
 
     interface rectangleObject {
@@ -455,7 +456,7 @@ module phoenix {
             public onStart: () => void = function () { },
             public onClose: () => void = function () { },
             public url: string= "localhost/send",
-            private contentTemplate: string = "../src/templates/fa-Ir/template.html") {
+            private contentTemplate: string = "template.html") {
             this.fb_Content = new feedbackContent(
                 this.url,
                 this.contentTemplate,
