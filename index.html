@@ -23,7 +23,7 @@
             console.log('onClose');
         }
 
-        var options = new phoenix.feedbackOptions(onStart, onClose);
+        var options = new phoenix.feedbackOptions(onStart, onClose,'localhost/send');
         new phoenix.feedback("content", options);
     </script>
 
